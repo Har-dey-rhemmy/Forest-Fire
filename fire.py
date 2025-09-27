@@ -60,7 +60,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown('<p class="header-font">Forest Fire Risk Predictor (Logistic Regression)</p>', unsafe_allow_html=True)
+st.markdown('<p class="header-font">Forest Fire Risk Predictor</p>', unsafe_allow_html=True)
 st.write("Enter the weather and fire danger index values to predict the risk of fire.")
 
 with st.form("prediction_form"):
@@ -97,3 +97,4 @@ if submitted:
         
     except Exception as e:
         st.exception(f"An error occurred during prediction. Please check your file paths and feature order: {e}")
+
